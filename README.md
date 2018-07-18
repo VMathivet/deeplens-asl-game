@@ -30,7 +30,14 @@ $ git clone https://github.com/VMathivet/deeplens-asl-game.git awsdeeplensgame
 ### Deployment
 The model is located in the *model* folder and must be put in S3 (with the authorization for the Deeplens service). The Lambda function handler is located in the *lambda* folder. You must make a zip of the python file and the 2 folders and upload it to AWS Lambda. To use them, you just have to follow the same steps as described in the [AWS documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-train-model.html) starting step 4.
 
-Once deployed on the DeepLens, you will have deploy the game interface. **Make sure to have NodeJS 8.10 installed on your AWS DeepLens**
+Once deployed on the DeepLens, you will have deploy the game interface. 
+
+**Make sure to have NodeJS 8.10 installed on your AWS DeepLens**
+If it's not the case, run these commands:
+``` curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
 To deploy it, perform the following command lines:
 ``` bash
 # go to the src folder
