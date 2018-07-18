@@ -16,7 +16,7 @@ Video available on Youtube
 ## How to use it
 
 ### Deployment
-The model is located in the model folder and the Lambda function handler is located in the lambda folder. To use it, you just have to follow the same steps as described in the AWS documentation starting step 4.
+The model is located in the *model* folder and the Lambda function handler is located in the *lambda* folder. To use it, you just have to follow the same steps as described in the [AWS documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-train-model.html) starting step 4.
 
 Once deployed on the DeepLens, you will have to open the Project Stream to see the inference results and try to create sentences!
 
@@ -25,16 +25,18 @@ The actual detected letter is shown in the top left corner (letter and confidenc
 
 On the bottom of the image you can see your message as it is written. Each letter appears if the same letter is recognized during a sufficient time.
 
-To make a whitespace: wait a few seconds with nothing recognized. To reset the message: wait longer ;)
+To make a whitespace: wait a few seconds with nothing recognized. 
+To reset the message: wait longer ;)
 
 Be careful:
+* Results are better if the background is white-ish, and there is nothing in the DeepLens field of view.
+* Try to do the signs only in the field (no face / body / ...).
+* There is a small delay between your movement and the camera feedback.
 
-Results are better if the background is white-ish, and there is nothing in the DeepLens field of view.
-Try to do the signs only in the field (no face / body / ...).
-There is a small delay between your movement and the camera feedback.
-Here is the ASL alphabet that you can use: ASL alphabet
+Here is the ASL alphabet that you can use: 
+![ASL alphabet](images/asl-alphabet.png)
 
-Samples can be found in the samples folder (images were extracted from our dataset).
+Samples can be found in the [samples folder](samples/) (images were extracted from our dataset).
 
 ## How we made it
 The dataset was made with a specific Lambda function that runs on the DeepLens (see "Snapshot sub-project" below for more information).
