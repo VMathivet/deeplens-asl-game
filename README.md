@@ -23,7 +23,7 @@ Once deployed on the DeepLens, you will have deploy the game interface :
 
 ###  Interface
 
-[TODO]
+![Interface](images/interface.png)
 
 Be careful: there is a small delay between your movement and the camera feedback.
 
