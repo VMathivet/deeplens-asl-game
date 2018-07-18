@@ -15,11 +15,35 @@ Video available on Youtube
 
 ## How to use it
 
+### Prerequisites
+
+Make sure you performed the following actions before continuing with the next steps:
+``` bash
+# create a GIT directory within your user home folder
+$ cd
+$ mkdir GIT
+$ cd GIT
+# clone that deepLens-asl-game project
+$ git clone https://github.com/VMathivet/deeplens-asl-game.git awsdeeplensgame
+```
+
 ### Deployment
 The model is located in the *model* folder and the Lambda function handler is located in the *lambda* folder. To use it, you just have to follow the same steps as described in the [AWS documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-train-model.html) starting step 4.
 
-Once deployed on the DeepLens, you will have deploy the game interface :
-[TODO]
+Once deployed on the DeepLens, you will have deploy the game interface. **Make sure to have NodeJS 8.10 installed on your AWS DeepLens**
+To deploy it, perform the following command lines:
+``` bash
+# go to the src folder
+$ cd src
+
+# install (dev) dependencies - NodeJS 8.10 must be installed on the AWS DeepLens device
+$ npm i --only=dev
+
+# TO PERFORM A QUICK TEST => serve with hot reload at localhost:3000
+$ npm run start
+```
+
+If you performed the *npm run start* command line and checks the web server is up and running with the Inteface, you can stop it and create a [Startup Application](https://help.ubuntu.com/stable/ubuntu-help/startup-applications.html.en) by specifying the **src/start_deeplens_game.sh** file
 
 ###  Interface
 
@@ -38,7 +62,7 @@ The dataset was homemade. We have taken different pictures with different people
 
 The training was done using Amazon SageMaker, with transfer learning on a resnet with 18 layers. It converges in 5 epochs to a satisfaying result.
 
-[TODO: game creation]
+The Game UX was built upon of [NuxtJS](https://nuxtjs.org/guide) framework and is using [Vue Material](https://vuematerial.io/) for the renderer. The different mechanisms like levels, lifes, score has been developed in Vanilla JS (upon of NuxtJS and additional node modules) + HTML5 + CSS2/3
 
 This is the project architecture:
 ![Architecture](images/architecture.png)
