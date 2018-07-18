@@ -39,7 +39,9 @@ The dataset was homemade. We have taken different pictures with different people
 The training was done using Amazon SageMaker, with transfer learning on a resnet with 18 layers. It converges in 5 epochs to a satisfaying result.
 
 [TODO: game creation]
-[TODO: game architecture]
+
+This is the project architecture:
+![Architecture](images/architecture.png)
 
 ## Who we are
 
