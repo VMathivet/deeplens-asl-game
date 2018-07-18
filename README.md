@@ -34,8 +34,9 @@ Once deployed on the DeepLens, you will have deploy the game interface.
 
 **Make sure to have NodeJS 8.10 installed on your AWS DeepLens**
 If it's not the case, run these commands:
-``` curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+``` bash
+$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
 ```
 
 To deploy it, perform the following command lines:
