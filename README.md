@@ -49,6 +49,8 @@ If you performed the *npm run start* command line and checks the web server is u
 
 ![Interface](images/interface.png)
 
+The game is split into three difficulty levels, depending on the length of the words you want to try to spell. When the game starts, a word to spell is chosen at random from a dictionnary we provided. For this Demo, these are all AWS services like Lambda ( medium difficulty) and Cloud Formation (hard). When the first letter to spell appears, you have 20 seconds to sign it to a satisfactory level. Since speed is an important factor in the quality of spelling, the faster the player successfully signs each letter, the higher his score is.
+
 Be careful: there is a small delay between your movement and the camera feedback.
 
 Here is the ASL alphabet that you can use: 
