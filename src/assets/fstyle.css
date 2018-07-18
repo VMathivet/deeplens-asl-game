@@ -1,0 +1,206 @@
+* {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  font-size: medium;
+  color: #000000;
+}
+body {
+  background-color: #FFFFFF;
+}
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(/fonts/qWcsB6-ypo7xBdr6Xshe96H3aDXbtwkh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(/fonts/qWcsB6-ypo7xBdr6Xshe96H3aDvbtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+.md-list-item-content {
+  font-size: 20px !important;
+}
+.md-button-content{
+  color: #FFFFFF;
+}
+.lifes {
+  display: none;
+}
+.nbLife {
+  height: 40px !important;
+}
+.easyGame {
+  background-color: #4caf50 !important
+}
+.mediumGame {
+  background-color: #e0851c !important
+}
+.hardGame {
+  background-color: #c82623 !important
+}
+.pbTimeoutASL {
+  margin: 40px;
+}
+.pbScoreASL {
+  height: 30px; min-height: 30px; max-height: 30px;
+}
+.shortSentence, .asLetter {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.asLetter {
+  font-size: 130px;
+}
+#awsServicesImg {
+  margin-top: 20px;
+}
+#awsServicesImg img {
+  height: 100px !important;
+}
+.logoTW {
+  height: 60px !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.logoCXP {
+  height: 233px !important;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 999;
+}
+.toasted.primary {
+  font-weight: bold !important;
+}
+.toasted-container .toasted {
+  font-size: 40px !important;
+}
+.triggerNickname {
+  display: none;
+}
+/* TW DIALOG */
+.md-dialog {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+}
+.md-dialog button .md-button-content {
+  display: none;
+}
+.triggerGameOver, .closeGameOver, .triggerCongrats, .closeCongrats, .triggerNickname, .closeNickname {
+  display: none;
+}
+@-webkit-keyframes gameover { 0% {background: #a22623;}
+							   50% {background: #c82623;}
+							   100% {background: #ee2623;} }
+
+@-moz-keyframes gameover { 0% {background: #a22623;}
+							50% {background: #c82623;}
+							100% {background: #ee2623;} }
+
+@keyframes gameover { 0% {background: #a22623;}
+							   50% {background: #c82623;}
+                 100% {background: #ee2623;} }
+@-webkit-keyframes congrats { 0% {background: #4c7950;}
+							   50% {background: #4caf50;}
+							   100% {background: #4cc850;} }
+
+@-moz-keyframes congrats { 0% {background: #4c7950;}
+							50% {background: #4caf50;}
+							100% {background: #4cc850;} }
+
+@keyframes congrats { 0% {background: #4c7950;}
+							   50% {background: #4caf50;}
+                 100% {background: #4cc850;} }
+.twDialog {
+  width: 100%;
+	margin: auto;
+	margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  padding: 0px 40px;
+  -webkit-animation-duration: 1s;
+	-webkit-animation-timing-function:  linear;
+	-webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-duration: 1s;
+	-moz-animation-timing-function:  linear;
+	-moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  animation-duration: 1s;
+	animation-timing-function:  linear;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.twDialogGameOver {
+  -webkit-animation-name: gameover;
+	-moz-animation-name: gameover;
+	animation-name: gameover;
+}
+.twDialogCongrats {
+  -webkit-animation-name: congrats;
+	-moz-animation-name: congrats;
+	animation-name: congrats;
+}
+.twPrompt {
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: none;
+}
+.twPrompt p {
+  margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 160px;
+	font-family: 'Black Ops One', cursive;
+	line-height: 120px;
+	text-align: center;
+	text-shadow: 5px 5px #000000;
+  color: #FFFFFF;
+}
+
+#twASLNickname {
+  background-color: #FFFFFF !important;
+}
+#twASLNickname button .md-button {
+  background-color: blue !important;
+}
+#twASLNickname button .md-button-content {
+  display: block;
+}
+#twASLNickname .scoreInfo {
+  margin-bottom: 10px;
+}
+/* END TW DIALOG */

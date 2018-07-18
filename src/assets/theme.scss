@@ -1,0 +1,20 @@
+@import "~vue-material/dist/theme/engine"; // Import the theme engine
+
+@include md-register-theme("default", (
+  primary: md-get-palette-color(blue, A200), // The primary color of your application
+));
+
+@import "~vue-material/dist/theme/all"; // Apply the theme
+
+.md-tabs + .md-tabs {
+  margin-top: 24px;
+}
+.md-progress-spinner {
+  margin: 24px;
+}
+.md-list {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid rgba(#000, .12);
+}

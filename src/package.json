@@ -1,0 +1,40 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "AWS DeepLens Game made by TeamWork & Corexpert",
+  "author": "TeamWork & Corexpert",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"nuxt\" \"nodemon ./api\"",
+    "build": "nuxt build",
+    "start": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nuxtjs/toast": "^3.0.1",
+    "axios": "^0.18.0",
+    "babel-eslint": "^7.2.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.16.3",
+    "material-design-icons": "^3.0.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.5",
+    "nuxt": "^1.0.0",
+    "sass-loader": "^6.0.6",
+    "svg-inline-loader": "^0.8.0",
+    "vue-focus-keyboard": "^1.0.1",
+    "vue-material": "latest"
+  }
+}
