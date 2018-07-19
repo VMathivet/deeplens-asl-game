@@ -72,7 +72,7 @@ The dataset was homemade. We have taken different pictures with different people
 
 The training was done using Amazon SageMaker, with transfer learning on a resnet with 18 layers. It converges in 5 epochs to a satisfaying result.
 
-The Game UX was built upon of [NuxtJS](https://nuxtjs.org/guide) framework and is using [Vue Material](https://vuematerial.io/) for the renderer. The different mechanisms like levels, lifes, score has been developed in Vanilla JS (upon of NuxtJS and additional node modules) + HTML5 + CSS2/3
+The Game UX was built upon of [NuxtJS](https://nuxtjs.org/guide) framework and is using [Vue Material](https://vuematerial.io/) for the renderer. The different mechanisms like levels, lifes, score have been developed in Vanilla JS (upon of NuxtJS and additional node modules) + HTML5 + CSS2/3
 
 This is the project architecture:
 ![Architecture](images/architecture.png)
