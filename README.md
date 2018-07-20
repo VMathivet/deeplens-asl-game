@@ -11,7 +11,7 @@ We have chosen the alphabet because it is mainly composed of static hands positi
 
 ## Demo video
 
-Video available on Youtube
+Video available on [Youtube](https://www.youtube.com/watch?v=PmMKaQ2zDTU)
 
 ## How to use it
 
