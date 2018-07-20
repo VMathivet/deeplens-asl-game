@@ -79,4 +79,4 @@ This is the project architecture:
 
 ## Who we are
 
-[TODO]
+![Corexpert](images/corexpert.png) ![TeamWork](images/teamwork.png)
