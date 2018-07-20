@@ -79,4 +79,6 @@ This is the project architecture:
 
 ## Who we are
 
-![Corexpert](images/corexpert.png) ![TeamWork](images/teamwork.png)
+| ![Corexpert](images/corexpert.png) | ![TeamWork](images/teamwork.png) |
+|---|---|
+
